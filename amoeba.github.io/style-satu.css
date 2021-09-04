@@ -1,0 +1,124 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(0, 35, 133);
+    background-image: url();
+}
+
+.container {
+    padding-top: 60px;
+    margin: auto;
+}
+
+.isi {
+    background-color: rgba(255, 255, 255, 0.726);            
+    width: 1200px;
+    height: 720px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    animation: animasiopacity 2s;
+}
+
+.judul {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    background: rgb(7, 73, 255);
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+.gambar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+    animation: animasizoom 1s ease;
+}
+
+.daun {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.lingkaran {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 0;
+    left: 100px;
+    top: 180px;
+    border-radius: 50%;
+    animation: animasizoom 1s ease;
+}
+
+.caption {
+    position: absolute;
+    font-size: 50px;
+    bottom: 300px;
+    left: 300px;
+    animation: animasiopacity 4s ease;
+}
+
+.tek {
+    color: rgb(0, 68, 255);
+    text-decoration: none;
+}
+
+.caption2 p {
+    position: absolute;
+    right: 300px;
+    font-size: 20px;
+    top: 340px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 134, 28);
+    border-radius: 5px;
+    padding: 2px 5px;
+    animation: animasiopacity 6s ease;
+}
+
+@keyframes animasizoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animasiopacity {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.bawah a {
+    font-size: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 520px;
+    bottom: 60px;
+    padding: 10px 15px;
+    background: rgb(7, 73, 255);
+    color: white;
+    border-radius: 30px;
+    transition: .4s;
+    animation: animasizoom 1.5s ease;
+    margin:auto;
+    text-decoration: none;
+}
+
+.mulai:hover {
+    transform: scale(1.1);
+}
